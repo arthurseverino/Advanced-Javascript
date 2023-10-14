@@ -67,7 +67,7 @@ function createBookCard(book) {
   readBtn.classList.add("readBtn");
   removeBtn.classList.add("removeBtn");
 
-  title.textContent = `"${book.title}"`;
+  title.textContent = `${book.title}`;
   title.style.fontWeight = "700";
   author.textContent = book.author;
   pages.textContent = `${book.pages} pages`;

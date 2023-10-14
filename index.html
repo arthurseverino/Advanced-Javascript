@@ -9,41 +9,22 @@
   </head>
   <body>
     <div class="container">
-      <h1>Library!</h1>
+      <h1>Personal Book Library</h1>
       <div class="addBookBtnContainer">
         <button class="addBookBtn">+ Add Book</button>
       </div>
-      <dialog class="modal">
+      <div class="modal">
         <form id="my-form">
-          <h3>Adding a Book!</h3>
-          <input
-            type="text"
-            id="title"
-            name="title"
-            placeholder="Title"
-            required
-          />
-          <input
-            type="text"
-            id="author"
-            name="author"
-            placeholder="Author"
-            required
-          />
-          <label for="pages">
-            <input
-              type="number"
-              id="pages"
-              name="pages"
-              placeholder=" Pages"
-              required
-            />
+          <h3>Add New Book</h3>
+          <input type="text" id="title" name="title" placeholder="Title" required/>
+          <input type="text" id="author" name="author" placeholder="Author" required/>
+          <input type="number" id="pages" name="pages" placeholder="Pages" required />
+          <label> Have you read the book?
+            <input type="checkbox" id="read" name="read" />
           </label>
-          <label for="read"> Have you read the book? </label>
-          <input type="checkbox" id="read" name="read" />
           <button type="submit" class="submitBtn">SUBMIT</button>
         </form>
-      </dialog>
+      </div>
       <div class="bookGrid"></div>
     </div>
   </body>
