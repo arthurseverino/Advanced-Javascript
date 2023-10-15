@@ -66,6 +66,7 @@ function createBookCard(book) {
   bookCard.classList.add("bookCard");
   readBtn.classList.add("readBtn");
   removeBtn.classList.add("removeBtn");
+  title.classList.add("titleCard");
 
   title.textContent = `${book.title}`;
   title.style.fontWeight = "700";
